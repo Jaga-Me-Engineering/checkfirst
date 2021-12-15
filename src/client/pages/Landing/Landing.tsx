@@ -12,7 +12,6 @@ import {
   SiteMap,
   OgpFooter,
 } from './components'
-import Masthead from '../../components/Masthead'
 
 export const Landing: FC = () => {
   const history = useHistory()
@@ -24,7 +23,6 @@ export const Landing: FC = () => {
     <Redirect to="/dashboard" />
   ) : (
     <>
-      <Masthead />
       <Flex direction="column">
         <Hero login={login} />
         <LearnMore />

@@ -11,7 +11,6 @@ import {
   VStack,
 } from '@chakra-ui/react'
 
-import Masthead from '../components/Masthead'
 import { Checker as CheckerComponent } from '../components'
 import { CheckerService } from '../services'
 
@@ -37,7 +36,7 @@ export const Checker: FC = () => {
 
   return (
     <>
-      {!isEmbedded() && <Masthead />}
+      {!isEmbedded()}
       <Flex
         direction="column"
         bg={{ base: 'white', lg: 'neutral.200' }}

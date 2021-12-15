@@ -2,7 +2,6 @@ import React, { FC, useState } from 'react'
 import { useHistory } from 'react-router-dom'
 import { Flex, VStack, Center, Image } from '@chakra-ui/react'
 import { OtpForm, LoginForm } from '../components'
-import Masthead from '../components/Masthead'
 
 import Logo from '../assets/checkfirst-logo.svg'
 import SignIn from '../assets/signin.svg'
@@ -15,7 +14,6 @@ export const Login: FC = () => {
 
   return (
     <Flex direction="column" h="100vh" align="stretch">
-      <Masthead />
       <Flex flex={1} direction="row">
         <Center
           flex={1}
